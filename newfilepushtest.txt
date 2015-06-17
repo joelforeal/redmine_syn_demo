@@ -1,3 +1,18 @@
 New File test push~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 New updated by 20150617 15:55
 New update test by 20150617 16:59
+
+HowTo keep in sync your git repository for redmine¶
+http://www.redmine.org/projects/redmine/wiki/HowTo_keep_in_sync_your_git_repository_for_redmine
+
+With sufficiently recent git (>=1.6.0)
+
+In the below examples, "git_user" and "project.git" should be modified for your GitHub project
+Set up a (bare) mirror of the source repository
+git clone --mirror git@github.com:git_user/project.git
+
+to fetch the changes
+------------------------
+cd project.git
+git fetch -q --all -p
+
