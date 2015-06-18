@@ -15,4 +15,3 @@ to fetch the changes
 ------------------------
 cd project.git
 git fetch -q --all -p
-
